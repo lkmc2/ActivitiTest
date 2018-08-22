@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f271d520-ba35-49bc-bfc0-f51dbab52cf7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/event.bpmn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,9 +37,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event.bpmn" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/event.bpmn">
-          <provider selected="true" editor-type-id="bpmn-editor" />
+      <file leaf-file-name="logback.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -61,6 +65,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/activiti/DemoMain.java" />
         <option value="$PROJECT_DIR$/src/main/resources/event.bpmn" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
       </list>
     </option>
   </component>
@@ -78,8 +83,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="950" />
-    <option name="width" value="497" />
+    <option name="x" value="913" />
+    <option name="width" value="534" />
     <option name="height" value="907" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -145,6 +150,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.AboutConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\IntellJ Project\ActivitiTest\src\main\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -227,7 +237,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534948378959</updated>
-      <workItem from="1534948384785" duration="2971000" />
+      <workItem from="1534948384785" duration="4871000" />
     </task>
     <task id="LOCAL-00001" summary="添加所需的jar包资源，并创建流程引擎">
       <created>1534949393362</created>
@@ -236,14 +246,22 @@
       <option name="project" value="LOCAL" />
       <updated>1534949393362</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="添加activiti流程图">
+      <created>1534951605956</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1534951605956</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2971000" />
+    <option name="totallyTimeSpent" value="4871000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="949" y="0" width="498" height="907" extended-state="0" />
+    <frame x="913" y="0" width="534" height="907" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -251,7 +269,7 @@
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="JRebel Executor" />
-      <window_info active="true" id="BPMN Editor" order="2" visible="true" weight="0.7694064" />
+      <window_info id="BPMN Editor" order="2" weight="0.7688787" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
       <window_info anchor="right" id="Database" />
@@ -265,10 +283,10 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32903227" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32903227" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" weight="0.33419356" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3402985" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.33755276" />
       <window_info id="JRebel" order="7" side_tool="true" />
       <window_info anchor="right" id="BPMNPalette" weight="0.32937685" />
       <window_info id="Learn" order="1" weight="0.3283582" />
@@ -290,7 +308,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加所需的jar包资源，并创建流程引擎" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加所需的jar包资源，并创建流程引擎" />
+    <MESSAGE value="添加activiti流程图" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加activiti流程图" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -299,6 +318,9 @@
           <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/event.bpmn">
+      <provider selected="true" editor-type-id="bpmn-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/activiti/DemoMain.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -310,8 +332,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/event.bpmn">
-      <provider selected="true" editor-type-id="bpmn-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
