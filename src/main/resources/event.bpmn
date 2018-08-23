@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:tns="http://www.activiti.org/test" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" expressionLanguage="http://www.w3.org/1999/XPath" id="m1534949565115" name="" targetNamespace="http://www.activiti.org/test" typeLanguage="http://www.w3.org/2001/XMLSchema">
-  <process id="submitForm" isClosed="false" isExecutable="true" name="二级流程审批" processType="None">
+  <process id="submitForm" isClosed="false" isExecutable="true" name="二级审批流程" processType="None">
     <startEvent id="startEvent" name="�?�?"/>
-    <userTask activiti:exclusive="true" id="submitForm" name="员工提交审核">
+    <userTask activiti:exclusive="true" id="submitForm" name="填写审批信息">
       <extensionElements>
-        <activiti:formProperty id="message" name="鐢宠淇℃伅" required="true" type="string">
+        <activiti:formProperty id="message" name="閻㈠疇顕穱鈩冧�?" required="true" type="string">
           <activiti:value/>
         </activiti:formProperty>
-        <activiti:formProperty id="name" name="鐢宠浜哄�??" required="true" type="string"/>
-        <activiti:formProperty datePattern="yyyy-MM-dd" id="submitTime" name="鎻愪氦鏃堕棿" required="true" type="date"/>
-        <activiti:formProperty id="submitType" name="纭鐢宠" required="true" type="string"/>
+        <activiti:formProperty id="name" name="閻㈠疇顕禍鍝勵潣閸??" required="true" type="string"/>
+        <activiti:formProperty datePattern="yyyy-MM-dd" id="submitTime" name="閹绘劒姘﹂弮鍫曟�?" required="true" type="date"/>
+        <activiti:formProperty id="submitType" name="绾喛顓婚悽瀹狀�?" required="true" type="string"/>
       </extensionElements>
     </userTask>
-    <exclusiveGateway gatewayDirection="Unspecified" id="decideSubmit" name="管理员审�?"/>
-    <userTask activiti:exclusive="true" id="tl_approve" name="管理�?">
+    <exclusiveGateway gatewayDirection="Unspecified" id="decideSubmit" name="提交or取消"/>
+    <userTask activiti:exclusive="true" id="tl_approve" name="主管审批">
       <extensionElements>
-        <activiti:formProperty id="tlApprove" name="涓荤�?�℃壒缁撴灉" required="true" type="string"/>
-        <activiti:formProperty id="tlMessage" name="涓荤澶囨敞" required="true" type="string"/>
+        <activiti:formProperty id="tlApprove" name="娑撹崵顓�??光剝澹掔紒鎾寸亯" required="true" type="string"/>
+        <activiti:formProperty id="tlMessage" name="娑撹崵顓告径鍥ㄦ�?" required="true" type="string"/>
       </extensionElements>
     </userTask>
-    <exclusiveGateway gatewayDirection="Unspecified" id="decideTLApprove" name="管理员审�?"/>
-    <userTask activiti:exclusive="true" id="hr_approve" name="hr审批">
+    <exclusiveGateway gatewayDirection="Unspecified" id="decideTLApprove" name="主管审批校验"/>
+    <userTask activiti:exclusive="true" id="hr_approve" name="人事审批">
       <extensionElements>
-        <activiti:formProperty id="hrApprove" name="浜轰簨�?�℃壒缁撴灉" required="true" type="string"/>
-        <activiti:formProperty id="hrMessage" name="浜轰簨澶囨敞" required="true" type="string"/>
+        <activiti:formProperty id="hrApprove" name="娴滆桨绨�??光剝澹掔紒鎾寸亯" required="true" type="string"/>
+        <activiti:formProperty id="hrMessage" name="娴滆桨绨ㄦ径鍥ㄦ�?" required="true" type="string"/>
       </extensionElements>
     </userTask>
-    <exclusiveGateway gatewayDirection="Unspecified" id="decideHraApprove" name="hr审批流程"/>
+    <exclusiveGateway gatewayDirection="Unspecified" id="decideHraApprove" name="人事审批校验"/>
     <endEvent id="endEvent" name="结束"/>
     <sequenceFlow id="_11" sourceRef="startEvent" targetRef="submitForm"/>
     <sequenceFlow id="_12" sourceRef="submitForm" targetRef="decideSubmit"/>
@@ -108,7 +108,7 @@
           <omgdc:Bounds height="32.0" width="32.0" x="0.0" y="0.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge bpmnElement="_12" id="BPMNEdge__12" sourceElement="second_approve" targetElement="decideSubmit">
+      <bpmndi:BPMNEdge bpmnElement="_12" id="BPMNEdge__12" sourceElement="submitForm" targetElement="decideSubmit">
         <omgdi:waypoint x="335.0" y="282.5"/>
         <omgdi:waypoint x="400.0" y="271.0"/>
         <bpmndi:BPMNLabel>
@@ -136,7 +136,7 @@
           <omgdc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge bpmnElement="_16" id="BPMNEdge__16" sourceElement="decideTLApprove" targetElement="second_approve">
+      <bpmndi:BPMNEdge bpmnElement="_16" id="BPMNEdge__16" sourceElement="decideTLApprove" targetElement="submitForm">
         <omgdi:waypoint x="671.0" y="307.0"/>
         <omgdi:waypoint x="485.0" y="470.0"/>
         <omgdi:waypoint x="292.5" y="310.0"/>
@@ -144,7 +144,7 @@
           <omgdc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge bpmnElement="_19" id="BPMNEdge__19" sourceElement="decideHraApprove" targetElement="second_approve">
+      <bpmndi:BPMNEdge bpmnElement="_19" id="BPMNEdge__19" sourceElement="decideHraApprove" targetElement="submitForm">
         <omgdi:waypoint x="881.0" y="285.0"/>
         <omgdi:waypoint x="575.0" y="180.0"/>
         <omgdi:waypoint x="292.5" y="255.0"/>
@@ -174,7 +174,7 @@
           <omgdc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge bpmnElement="_11" id="BPMNEdge__11" sourceElement="startEvent" targetElement="second_approve">
+      <bpmndi:BPMNEdge bpmnElement="_11" id="BPMNEdge__11" sourceElement="startEvent" targetElement="submitForm">
         <omgdi:waypoint x="162.0" y="296.0"/>
         <omgdi:waypoint x="250.0" y="282.5"/>
         <bpmndi:BPMNLabel>
