@@ -26,6 +26,8 @@ import java.util.Scanner;
  * @author lkmc2
  * @date 2018/8/22
  * @description 启动类
+ * 可以使用mvn spring-boot:run启动程序，并是使用mvn package打包成jar包（生成在target目录下）
+ * 运行jar包程序命令：java -jar activiti-test-1.0-SNAPSHOT.jar
  */
 
 public class DemoMain {
