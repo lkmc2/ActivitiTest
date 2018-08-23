@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f271d520-ba35-49bc-bfc0-f51dbab52cf7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat_9.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/event.bpmn" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/event.bpmn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/event.bpmn20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/event.bpmn20.xml" afterDir="false" />
@@ -21,13 +20,23 @@
       <file leaf-file-name="DemoMain.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/activiti/DemoMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="82" column="29" lean-forward="true" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
+            <state relative-caret-position="969">
+              <caret line="51" column="53" lean-forward="true" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="event.bpmn20.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/event.bpmn20.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="67" lean-forward="true" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.jboss.jbpm.chart.editor.BpmnDesignerFileEditorProvider" />
         </entry>
       </file>
     </leaf>
@@ -75,7 +84,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="622" />
     <option name="width" value="825" />
     <option name="height" value="907" />
@@ -236,7 +245,7 @@
       <option name="presentableId" value="Default" />
       <updated>1534948378959</updated>
       <workItem from="1534948384785" duration="6037000" />
-      <workItem from="1534992532201" duration="3300000" />
+      <workItem from="1534992532201" duration="5190000" />
     </task>
     <task id="LOCAL-00001" summary="添加所需的jar包资源，并创建流程引擎">
       <created>1534949393362</created>
@@ -280,14 +289,22 @@
       <option name="project" value="LOCAL" />
       <updated>1534994349631</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="修复xml的中文乱码">
+      <created>1534995901050</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1534995901050</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9337000" />
+    <option name="totallyTimeSpent" value="11227000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="622" y="0" width="825" height="907" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="916" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -296,7 +313,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="JRebel Executor" order="7" />
-      <window_info id="BPMN Editor" order="2" weight="0.3254902" />
+      <window_info id="BPMN Editor" order="2" weight="0.3252149" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
       <window_info anchor="right" id="Database" order="3" />
@@ -310,12 +327,12 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32908162" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4234694" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42219388" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.33419356" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33594772" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2722063" />
       <window_info id="JRebel" order="7" side_tool="true" />
-      <window_info anchor="right" id="BPMNPalette" order="3" weight="0.03398693" />
+      <window_info anchor="right" id="BPMNPalette" order="3" weight="0.032234956" />
       <window_info id="Learn" order="1" weight="0.3283582" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="8" side_tool="true" />
@@ -340,7 +357,8 @@
     <MESSAGE value="部署流程定义文件，并将bpmn文件后缀名改成xml" />
     <MESSAGE value="完成一个流程的定义和启动" />
     <MESSAGE value="编写从控制台获取用户输入的逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="编写从控制台获取用户输入的逻辑" />
+    <MESSAGE value="修复xml的中文乱码" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复xml的中文乱码" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -395,21 +413,21 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/event2.bpmn">
       <provider selected="true" editor-type-id="bpmn-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/event.bpmn">
+      <provider selected="true" editor-type-id="bpmn-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/event.bpmn20.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="76" lean-forward="true" selection-start-line="31" selection-start-column="76" selection-end-line="31" selection-end-column="76" />
+        <state relative-caret-position="190">
+          <caret line="10" column="67" lean-forward="true" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.jboss.jbpm.chart.editor.BpmnDesignerFileEditorProvider" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/event.bpmn">
-      <provider selected="true" editor-type-id="bpmn-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/activiti/DemoMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="82" column="29" lean-forward="true" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
+        <state relative-caret-position="969">
+          <caret line="51" column="53" lean-forward="true" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
