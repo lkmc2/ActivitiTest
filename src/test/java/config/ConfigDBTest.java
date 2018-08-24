@@ -32,4 +32,21 @@ public class ConfigDBTest {
 
     }
 
+    @Test
+    public void testConfig2() {
+        // 获取默认的流程引擎对象（读取activiti.cfg.xml配置文件，基于Spring）
+        ProcessEngineConfiguration configuration =
+                ProcessEngineConfiguration.createProcessEngineConfigurationFromResource("activiti_druid.cfg.xml");
+
+        LOGGER.info("configuration = {}", configuration);
+        // 运行结果：configuration = org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration@51768776
+
+        ProcessEngine processEngine = configuration.buildProcessEngine();
+
+        LOGGER.info("获取流程引擎 {}", processEngine.getName());
+        // 运行结果：获取流程引擎 default
+        processEngine.close();
+
+    }
+
 }
