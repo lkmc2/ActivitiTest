@@ -1,5 +1,6 @@
 package config;
 
+import org.activiti.engine.ProcessEngine;
 import org.activiti.engine.ProcessEngineConfiguration;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -8,12 +9,11 @@ import org.slf4j.LoggerFactory;
 /**
  * @author lkmc2
  * @date 2018/8/24
- * @description 配置测试类
+ * @description 数据库配置测试
  */
+public class ConfigDBTest {
 
-public class ConfigTest {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(ConfigTest.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ConfigDBTest.class);
 
     @Test
     public void testConfig1() {
@@ -23,16 +23,13 @@ public class ConfigTest {
 
         LOGGER.info("configuration = {}", configuration);
         // 运行结果：configuration = org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration@7651218e
-    }
 
-    @Test
-    public void testConfig2() {
-        // 创建独立的流程引擎对象（不依赖spring）
-        ProcessEngineConfiguration configuration =
-                ProcessEngineConfiguration.createStandaloneProcessEngineConfiguration();
+        ProcessEngine processEngine = configuration.buildProcessEngine();
 
-        LOGGER.info("configuration = {}", configuration);
-        // 运行结果：configuration = org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration@5f20155b
+        LOGGER.info("获取流程引擎 {}", processEngine.getName());
+        // 运行结果：获取流程引擎 default
+        processEngine.close();
+
     }
 
 }
