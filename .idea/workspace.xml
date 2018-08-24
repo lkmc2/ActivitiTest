@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f271d520-ba35-49bc-bfc0-f51dbab52cf7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/activiti_druid.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/activiti_druid.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/activiti_druid.cfg.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,8 +33,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="-835">
+              <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -67,8 +66,8 @@
       <file leaf-file-name="ConfigDBTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigDBTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+            <state relative-caret-position="205">
+              <caret line="41" column="106" selection-start-line="41" selection-start-column="106" selection-end-line="41" selection-end-column="106" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,8 +87,8 @@
       <file leaf-file-name="activiti_druid.cfg.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/activiti_druid.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+            <state relative-caret-position="205">
+              <caret line="16" column="50" lean-forward="true" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -124,8 +123,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/event.bpmn20.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/activiti/DemoMain.java" />
         <option value="$PROJECT_DIR$/src/test/java/config/ConfigTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/config/ConfigDBTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/activiti.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/config/ConfigDBTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/activiti_druid.cfg.xml" />
       </list>
@@ -428,7 +427,7 @@
       <workItem from="1534948384785" duration="6037000" />
       <workItem from="1534992532201" duration="8732000" />
       <workItem from="1535080520283" duration="2375000" />
-      <workItem from="1535086729419" duration="2258000" />
+      <workItem from="1535086729419" duration="3352000" />
     </task>
     <task id="LOCAL-00001" summary="添加所需的jar包资源，并创建流程引擎">
       <created>1534949393362</created>
@@ -528,28 +527,24 @@
       <option name="project" value="LOCAL" />
       <updated>1535096822826</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="更换druid的数据源">
+      <created>1535097347293</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1535097347293</updated>
+    </task>
+    <task id="LOCAL-00016" summary="更换Hikari的数据源">
+      <created>1535097903469</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1535097903469</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConfigTest_testConfig1 - 2018.08.24 at 12h 37m 51s.xml">
-      <configuration name="ConfigTest.testConfig1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConfigTest_testConfig2 - 2018.08.24 at 12h 40m 50s.xml">
-      <configuration name="ConfigTest.testConfig2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConfigDBTest_testConfig1 - 2018.08.24 at 15h 32m 48s.xml">
-      <configuration name="ConfigDBTest.testConfig1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConfigDBTest_testConfig1 - 2018.08.24 at 15h 38m 05s.xml">
-      <configuration name="ConfigDBTest.testConfig1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConfigDBTest_testConfig1 - 2018.08.24 at 15h 40m 08s.xml">
-      <configuration name="ConfigDBTest.testConfig1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConfigDBTest_testConfig1 - 2018.08.24 at 15h 40m 51s.xml">
-      <configuration name="ConfigDBTest.testConfig1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ConfigDBTest_testConfig1 - 2018.08.24 at 15h 42m 16s.xml">
       <configuration name="ConfigDBTest.testConfig1" configurationId="JUnit" />
     </history-entry>
@@ -562,9 +557,27 @@
     <history-entry file="ConfigDBTest_testConfig2 - 2018.08.24 at 15h 54m 20s.xml">
       <configuration name="ConfigDBTest.testConfig2" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ConfigDBTest_testConfig2 - 2018.08.24 at 16h 02m 28s.xml">
+      <configuration name="ConfigDBTest.testConfig2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigDBTest_testConfig2 - 2018.08.24 at 16h 02m 43s.xml">
+      <configuration name="ConfigDBTest.testConfig2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigDBTest_testConfig2 - 2018.08.24 at 16h 03m 23s.xml">
+      <configuration name="ConfigDBTest.testConfig2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigDBTest_testConfig2 - 2018.08.24 at 16h 04m 16s.xml">
+      <configuration name="ConfigDBTest.testConfig2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigDBTest_testConfig2 - 2018.08.24 at 16h 06m 49s.xml">
+      <configuration name="ConfigDBTest.testConfig2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigDBTest_testConfig2 - 2018.08.24 at 16h 07m 24s.xml">
+      <configuration name="ConfigDBTest.testConfig2" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19402000" />
+    <option name="totallyTimeSpent" value="20496000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="858" y="0" width="589" height="907" extended-state="0" />
@@ -589,7 +602,7 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4219355" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4219355" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32908162" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.33419356" />
@@ -629,7 +642,9 @@
     <MESSAGE value="添加数据库配置测试用例" />
     <MESSAGE value="将数据库从H2替换成MySQL" />
     <MESSAGE value="修改mysql的url，防止报错" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改mysql的url，防止报错" />
+    <MESSAGE value="更换druid的数据源" />
+    <MESSAGE value="更换Hikari的数据源" />
+    <option name="LAST_COMMIT_MESSAGE" value="更换Hikari的数据源" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -756,7 +771,7 @@
           <ID>SPRING</ID>
           <OriginalElement>mappedClass=org.activiti.engine.ProcessEngineConfiguration</OriginalElement>
           <nodes>
-            <node x="" y="" />
+            <node x="" y="">module=ActivitiTest;fileset=fileset;context=F:/IntellJ Project/ActivitiTest/src/main/resources/activiti.cfg.xml;bean_class=org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration;bean_name=processEngineConfiguration</node>
             <node x="" y="">&lt;unknown&gt;</node>
           </nodes>
           <notes />
@@ -764,7 +779,7 @@
           <settings layout="Hierarchic Group" zoom="1.0" x="133.0" y="114.0" />
           <SelectedNodes />
           <Categories>
-            <Category />
+            <Category>Local context</Category>
             <Category>Properties</Category>
           </Categories>
           <SCOPE>All</SCOPE>
@@ -827,16 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigDBTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/activiti.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -844,10 +849,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigDBTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="41" column="106" selection-start-line="41" selection-start-column="106" selection-end-line="41" selection-end-column="106" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="-835">
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -863,8 +878,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/activiti_druid.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        <state relative-caret-position="205">
+          <caret line="16" column="50" lean-forward="true" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
         </state>
       </provider>
     </entry>

@@ -8,8 +8,18 @@
     class="org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration">
 
     <!-- Database configurations -->
-    <property name="databaseSchemaUpdate" value="create-drop" />
-    <property name="dataSource" ref="dataSourceHikar"/>
+    <property name="databaseSchemaUpdate" value="drop-create" />
+    <property name="dataSource" ref="dataSource"/>
+
+    <!--记录历史数据-->
+    <property name="dbHistoryUsed" value="true"/>
+    <!--记录身份数据-->
+    <property name="dbIdentityUsed" value="true"/>
+
+    <!--配置自定义表前缀-->
+    <property name="databaseTablePrefix" value="t_"/>
+    <!--设置数据库类型（可不设置此属性）-->
+    <property name="databaseType" value="mysql"/>
 
   </bean>
 
