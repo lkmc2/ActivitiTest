@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f271d520-ba35-49bc-bfc0-f51dbab52cf7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/config/ConfigDBTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/config/ConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/ConfigTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/activiti.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/activiti.cfg.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
+            <state relative-caret-position="210">
+              <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -56,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="25" selection-end-column="5" />
+              <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="25" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigDBTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
-              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+              <caret line="29" column="30" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activiti.cfg.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activiti.cfg.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/activiti.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+            <state relative-caret-position="323">
+              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -113,10 +113,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/event.bpmn" />
         <option value="$PROJECT_DIR$/src/main/resources/event.bpmn20.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/activiti/DemoMain.java" />
         <option value="$PROJECT_DIR$/src/test/java/config/ConfigTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/config/ConfigDBTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/activiti.cfg.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -392,7 +393,7 @@
       <workItem from="1534948384785" duration="6037000" />
       <workItem from="1534992532201" duration="8732000" />
       <workItem from="1535080520283" duration="2375000" />
-      <workItem from="1535086729419" duration="1219000" />
+      <workItem from="1535086729419" duration="1502000" />
     </task>
     <task id="LOCAL-00001" summary="添加所需的jar包资源，并创建流程引擎">
       <created>1534949393362</created>
@@ -471,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535085545380</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="添加数据库配置测试用例">
+      <created>1535096208100</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1535096208100</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -484,9 +492,21 @@
     <history-entry file="ConfigTest_testConfig2 - 2018.08.24 at 12h 40m 50s.xml">
       <configuration name="ConfigTest.testConfig2" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ConfigDBTest_testConfig1 - 2018.08.24 at 15h 32m 48s.xml">
+      <configuration name="ConfigDBTest.testConfig1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigDBTest_testConfig1 - 2018.08.24 at 15h 38m 05s.xml">
+      <configuration name="ConfigDBTest.testConfig1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigDBTest_testConfig1 - 2018.08.24 at 15h 40m 08s.xml">
+      <configuration name="ConfigDBTest.testConfig1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigDBTest_testConfig1 - 2018.08.24 at 15h 40m 51s.xml">
+      <configuration name="ConfigDBTest.testConfig1" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18363000" />
+    <option name="totallyTimeSpent" value="18646000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="858" y="0" width="589" height="907" extended-state="0" />
@@ -548,7 +568,8 @@
     <MESSAGE value="简化代码逻辑" />
     <MESSAGE value="让生成的jar可以包含所有所需环境，导入spring-boot设置" />
     <MESSAGE value="添加获取默认的流程引擎对象的例子" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加获取默认的流程引擎对象的例子" />
+    <MESSAGE value="添加数据库配置测试用例" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加数据库配置测试用例" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -655,13 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/activiti/DemoMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
@@ -692,7 +706,7 @@
           <ID>SPRING</ID>
           <OriginalElement>mappedClass=org.activiti.engine.ProcessEngineConfiguration</OriginalElement>
           <nodes>
-            <node x="" y="">module=ActivitiTest;fileset=fileset;context=F:/IntellJ Project/ActivitiTest/src/main/resources/activiti.cfg.xml;bean_class=org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration;bean_name=processEngineConfiguration</node>
+            <node x="" y="" />
             <node x="" y="">&lt;unknown&gt;</node>
           </nodes>
           <notes />
@@ -700,7 +714,7 @@
           <settings layout="Hierarchic Group" zoom="1.0" x="133.0" y="114.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Local context</Category>
+            <Category />
             <Category>Properties</Category>
           </Categories>
           <SCOPE>All</SCOPE>
@@ -756,7 +770,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigDBTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+          <caret line="29" column="30" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -766,7 +780,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="25" selection-end-column="5" />
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -775,8 +789,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/activiti.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        <state relative-caret-position="323">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
         </state>
       </provider>
     </entry>
