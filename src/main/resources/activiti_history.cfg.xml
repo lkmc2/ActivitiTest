@@ -8,7 +8,10 @@
   <bean id="processEngineConfiguration"
     class="org.activiti.engine.impl.cfg.StandaloneInMemProcessEngineConfiguration">
     <property name="commandInvoker" ref="commandInvoker"/>
-    <property name="history" value="none"/> <!--不显示历史信息-->
+    <!--<property name="history" value="none"/> &lt;!&ndash;不显示历史信息&ndash;&gt;-->
+    <!--<property name="history" value="activity"/> &lt;!&ndash;记录活动和变量的最终结果，但不记录变量的初始值和变化&ndash;&gt;-->
+    <!--<property name="history" value="audit"/> &lt;!&ndash;记录活动和变量，内容比activity多一些&ndash;&gt;-->
+    <property name="history" value="full"/> <!--记录活动和变量的初始值、变化值和结果-->
   </bean>
 
   <bean id="commandInvoker" class="com.lin.activiti.interceptor.MDCCommandInvoker"/>
