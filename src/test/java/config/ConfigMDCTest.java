@@ -24,7 +24,7 @@ public class ConfigMDCTest {
 
     // 系统将自动生成流程实例
     @Rule
-    public ActivitiRule activitiRule = new ActivitiRule();
+    public ActivitiRule activitiRule = new ActivitiRule("activiti_mdc.cfg.xml");
 
     // 自动加载xml文件
     @Test
