@@ -1,6 +1,7 @@
 package config;
 
 
+import com.lin.activiti.event.CustomEventListener;
 import org.activiti.engine.delegate.event.ActivitiEventType;
 import org.activiti.engine.delegate.event.impl.ActivitiEntityEventImpl;
 import org.activiti.engine.delegate.event.impl.ActivitiEventImpl;
@@ -33,12 +34,16 @@ public class ConfigEventListenerTest {
     @Test
     @Deployment(resources = {"my-process.bpmn20.xml"})
     public void test() {
+        // 添加自定义事件
+        activitiRule.getRuntimeService().addEventListener(new CustomEventListener());
+
         ProcessInstance processInstance = activitiRule.getRuntimeService().startProcessInstanceByKey("my-process");
         Task task = activitiRule.getTaskService().createTaskQuery().singleResult();
         activitiRule.getTaskService().complete(task.getId());
 
-        // 手动发起自定义事件
+        // 手动发起自定义事件的监听
         activitiRule.getRuntimeService().dispatchEvent(new ActivitiEventImpl(ActivitiEventType.CUSTOM));
+
     }
 
 }

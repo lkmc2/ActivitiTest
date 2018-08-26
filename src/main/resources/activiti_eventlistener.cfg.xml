@@ -12,7 +12,7 @@
     <property name="eventListeners">
       <list>
         <!--<bean class="com.lin.activiti.event.ProcessEventListener"/>-->
-        <bean class="com.lin.activiti.event.CustomEventListener"/>
+        <!--<bean class="com.lin.activiti.event.CustomEventListener"/>-->
       </list>
     </property>
 
