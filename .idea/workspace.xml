@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f271d520-ba35-49bc-bfc0-f51dbab52cf7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/activiti_eventlog.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/config/ConfigEventLogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lin/activiti/event/ProcessEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/activiti_eventlistener.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/config/ConfigEventListenerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/config/ConfigEventLogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/ConfigEventLogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/config/ConfigHistoryLevelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/ConfigHistoryLevelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/config/ConfigMDCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/ConfigMDCTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,82 +35,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConfigEventLogTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigEventLogTest.java">
+      <file leaf-file-name="ConfigEventListenerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigEventListenerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            <state relative-caret-position="42">
+              <caret line="22" selection-start-line="22" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activiti_eventlog.cfg.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/activiti_eventlog.cfg.xml">
+      <file leaf-file-name="activiti_eventlistener.cfg.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/activiti_eventlistener.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="228">
+              <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProcessEngineConfigurationImpl.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/impl/cfg/ProcessEngineConfigurationImpl.class">
+      <file leaf-file-name="ProcessEventListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/activiti/event/ProcessEventListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="1980" column="64" selection-start-line="1980" selection-start-column="64" selection-end-line="1980" selection-end-column="64" />
+            <state>
+              <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="30" />
               <folding>
-                <element signature="e#125399#125400#0" expanded="true" />
-                <element signature="e#125453#125454#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#434#435#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventLogger.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/impl/event/logger/EventLogger.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivitiEventType.class" pinned="false" current-in-tab="true">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/delegate/event/ActivitiEventType.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="79" column="30" lean-forward="true" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StringUtils.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar!/org/apache/commons/lang3/StringUtils.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="977" column="27" selection-start-line="977" selection-start-column="27" selection-end-line="977" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="String.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/String.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="667" column="19" selection-start-line="667" selection-start-column="19" selection-end-line="667" selection-end-column="19" />
-              <folding>
-                <element signature="e#24800#24801#0" expanded="true" />
-                <element signature="e#24840#24841#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivitiEventDispatcher.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/delegate/event/ActivitiEventDispatcher.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -150,11 +106,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lin/activiti/interceptor/MDCCommandInvoker.java" />
         <option value="$PROJECT_DIR$/src/main/resources/my-process.bpmn20.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/activiti_mdc.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/config/ConfigMDCTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/activiti_history.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/config/ConfigHistoryLevelTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/activiti_eventlog.cfg.xml" />
         <option value="$PROJECT_DIR$/src/test/java/config/ConfigEventLogTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/config/ConfigHistoryLevelTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/config/ConfigMDCTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/config/ConfigEventListenerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lin/activiti/event/ProcessEventListener.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/activiti_eventlistener.cfg.xml" />
       </list>
     </option>
   </component>
@@ -226,16 +185,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="activiti" type="462c0819:PsiDirectoryNode" />
-              <item name="delegate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ActivitiTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ActivitiTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="activiti" type="462c0819:PsiDirectoryNode" />
-              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ActivitiTest" type="b2602c69:ProjectViewProjectNode" />
@@ -300,32 +250,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ConfigEventLogTest.test">
+  <component name="RunManager" selected="JUnit.ConfigEventListenerTest.test">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="ConfigDBTest.testConfig1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ActivitiTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="config.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="config" />
-      <option name="MAIN_CLASS_NAME" value="config.ConfigDBTest" />
-      <option name="METHOD_NAME" value="testConfig1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="ConfigDBTest.testConfig2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ActivitiTest" />
@@ -340,6 +267,29 @@
       <option name="PACKAGE_NAME" value="config" />
       <option name="MAIN_CLASS_NAME" value="config.ConfigDBTest" />
       <option name="METHOD_NAME" value="testConfig2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ConfigEventListenerTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ActivitiTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="config" />
+      <option name="MAIN_CLASS_NAME" value="config.ConfigEventListenerTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -459,19 +409,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 9" />
-      <item itemvalue="JUnit.ConfigDBTest.testConfig1" />
       <item itemvalue="JUnit.ConfigDBTest.testConfig2" />
       <item itemvalue="JUnit.ConfigMDCTest.test" />
       <item itemvalue="JUnit.ConfigHistoryLevelTest.test" />
       <item itemvalue="JUnit.ConfigEventLogTest.test" />
+      <item itemvalue="JUnit.ConfigEventListenerTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConfigEventListenerTest.test" />
         <item itemvalue="JUnit.ConfigEventLogTest.test" />
         <item itemvalue="JUnit.ConfigHistoryLevelTest.test" />
         <item itemvalue="JUnit.ConfigMDCTest.test" />
         <item itemvalue="JUnit.ConfigDBTest.testConfig2" />
-        <item itemvalue="JUnit.ConfigDBTest.testConfig1" />
       </list>
     </recent_temporary>
   </component>
@@ -490,7 +440,7 @@
       <workItem from="1535080520283" duration="2375000" />
       <workItem from="1535086729419" duration="5003000" />
       <workItem from="1535169731390" duration="8027000" />
-      <workItem from="1535253455077" duration="2334000" />
+      <workItem from="1535253455077" duration="3483000" />
     </task>
     <task id="LOCAL-00001" summary="添加所需的jar包资源，并创建流程引擎">
       <created>1534949393362</created>
@@ -639,13 +589,17 @@
       <option name="project" value="LOCAL" />
       <updated>1535184769211</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="添加EventLog的测试用例">
+      <created>1535255938888</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1535255938888</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConfigHistoryLevelTest_test - 2018.08.25 at 15h 39m 42s.xml">
-      <configuration name="ConfigHistoryLevelTest.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ConfigHistoryLevelTest_test - 2018.08.25 at 15h 50m 49s.xml">
       <configuration name="ConfigHistoryLevelTest.test" configurationId="JUnit" />
     </history-entry>
@@ -673,12 +627,15 @@
     <history-entry file="ConfigEventLogTest_test - 2018.08.26 at 11h 29m 47s.xml">
       <configuration name="ConfigEventLogTest.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ConfigEventListenerTest_test - 2018.08.26 at 12h 15m 53s.xml">
+      <configuration name="ConfigEventListenerTest.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32508000" />
+    <option name="totallyTimeSpent" value="33657000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="916" extended-state="6" />
+    <frame x="858" y="0" width="589" height="907" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -701,7 +658,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32908162" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29591838" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29548386" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.33419356" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.6994329" />
@@ -747,7 +704,8 @@
     <MESSAGE value="添加commandInvoker，并在activit_mdc.cfg.xml配置文件中指定，让mdc记录器在执行过程中进行打印" />
     <MESSAGE value="添加历史级别测试用例，并设置不显示显示信息" />
     <MESSAGE value="修改显示历史记录的级别为full，并重构历史级别测试用例的代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改显示历史记录的级别为full，并重构历史级别测试用例的代码" />
+    <MESSAGE value="添加EventLog的测试用例" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加EventLog的测试用例" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -755,37 +713,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/activiti.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/activiti_druid.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/test/ActivitiRule.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigMDCTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
@@ -811,6 +738,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -886,7 +816,7 @@
           <ID>SPRING</ID>
           <OriginalElement>mappedClass=org.activiti.engine.ProcessEngineConfiguration</OriginalElement>
           <nodes>
-            <node x="" y="" />
+            <node x="" y="">module=ActivitiTest;fileset=fileset;context=F:/IntellJ Project/ActivitiTest/src/main/resources/activiti.cfg.xml;bean_class=org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration;bean_name=processEngineConfiguration</node>
             <node x="" y="">&lt;unknown&gt;</node>
           </nodes>
           <notes />
@@ -894,7 +824,7 @@
           <settings layout="Hierarchic Group" zoom="1.0" x="133.0" y="114.0" />
           <SelectedNodes />
           <Categories>
-            <Category />
+            <Category>Local context</Category>
             <Category>Properties</Category>
           </Categories>
           <SCOPE>All</SCOPE>
@@ -954,24 +884,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigDBTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="41" column="106" selection-start-line="41" selection-start-column="106" selection-end-line="41" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="25" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1007,16 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigMDCTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1083,52 +989,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigHistoryLevelTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="148" column="5" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigEventLogTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/activiti_eventlog.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/delegate/event/ActivitiEventDispatcher.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/impl/cfg/ProcessEngineConfigurationImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="1980" column="64" selection-start-line="1980" selection-start-column="64" selection-end-line="1980" selection-end-column="64" />
-          <folding>
-            <element signature="e#125399#125400#0" expanded="true" />
-            <element signature="e#125453#125454#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/impl/event/logger/EventLogger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1152,8 +1016,120 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/delegate/event/ActivitiEventType.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="79" column="30" lean-forward="true" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+        <state relative-caret-position="1083">
+          <caret line="63" column="50" lean-forward="true" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/impl/interceptor/CommandContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="268" column="18" selection-start-line="268" selection-start-column="18" selection-end-line="268" selection-end-column="18" />
+          <folding>
+            <element signature="e#10573#10574#0" expanded="true" />
+            <element signature="e#10653#10654#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/impl/event/logger/EventLogger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1254">
+          <caret line="89" column="90" lean-forward="true" selection-start-line="89" selection-start-column="90" selection-end-line="89" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/impl/cfg/ProcessEngineConfigurationImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="1980" column="64" selection-start-line="1980" selection-start-column="64" selection-end-line="1980" selection-end-column="64" />
+          <folding>
+            <element signature="e#125399#125400#0" expanded="true" />
+            <element signature="e#125453#125454#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/activiti_eventlog.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigHistoryLevelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigMDCTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigEventLogTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigDBTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="41" column="106" selection-start-line="41" selection-start-column="106" selection-end-line="41" selection-end-column="106" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/activiti/event/ProcessEventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/activiti_eventlistener.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigEventListenerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="22" selection-start-line="22" selection-end-line="23" />
         </state>
       </provider>
     </entry>

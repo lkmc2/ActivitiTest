@@ -23,7 +23,7 @@ import java.util.Map;
 /**
  * @author lkmc2
  * @date 2018/8/24
- * @description 数据库配置测试
+ * @description 历史级别配置测试
  */
 public class ConfigHistoryLevelTest {
 

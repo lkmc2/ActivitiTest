@@ -16,15 +16,15 @@ import java.util.List;
 /**
  * @author lkmc2
  * @date 2018/8/24
- * @description 事件记录配置测试
+ * @description 事件监听器配置测试
  */
-public class ConfigEventLogTest {
+public class ConfigEventListenerTest {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ConfigEventLogTest.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ConfigEventListenerTest.class);
 
     // 系统将自动生成流程实例
     @Rule
-    public ActivitiRule activitiRule = new ActivitiRule("activiti_eventlog.cfg.xml");
+    public ActivitiRule activitiRule = new ActivitiRule("activiti_eventlistener.cfg.xml");
 
     // 自动加载xml文件
     @Test
@@ -34,15 +34,6 @@ public class ConfigEventLogTest {
         Task task = activitiRule.getTaskService().createTaskQuery().singleResult();
         activitiRule.getTaskService().complete(task.getId());
 
-        // 获取事件记录日志
-        List<EventLogEntry> eventLogEntries = activitiRule
-                .getManagementService()
-                .getEventLogEntriesByProcessInstanceId(processInstance.getParentId());
-
-        for (EventLogEntry eventLogEntry : eventLogEntries) {
-            LOGGER.info("eventLog.type = {}, eventLog.data = {}", eventLogEntry.getType(), new String(eventLogEntry.getData()));
-        }
-        LOGGER.info("eventLogEntries.size = {}", eventLogEntries.size());
     }
 
 }
