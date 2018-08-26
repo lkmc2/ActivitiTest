@@ -8,11 +8,24 @@
   <bean id="processEngineConfiguration"
     class="org.activiti.engine.impl.cfg.StandaloneInMemProcessEngineConfiguration">
     <!--<property name="commandInvoker" ref="commandInvoker"/>-->
+    <!--监听全局事件-->
     <property name="eventListeners">
       <list>
-        <bean class="com.lin.activiti.event.ProcessEventListener"/>
+        <!--<bean class="com.lin.activiti.event.ProcessEventListener"/>-->
+        <bean class="com.lin.activiti.event.CustomEventListener"/>
       </list>
     </property>
+
+    <!--监听指定类型的事件-->
+    <!--<property name="typedEventListeners">-->
+      <!--<map>-->
+        <!--<entry key="PROCESS_STARTED"> &lt;!&ndash;只监听流程启动事件&ndash;&gt;-->
+          <!--<list>-->
+            <!--<bean class="com.lin.activiti.event.ProcessEventListener"/>-->
+          <!--</list>-->
+        <!--</entry>-->
+      <!--</map>-->
+    <!--</property>-->
   </bean>
 
   <bean id="commandInvoker" class="com.lin.activiti.interceptor.MDCCommandInvoker"/>

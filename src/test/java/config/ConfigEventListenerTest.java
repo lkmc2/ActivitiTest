@@ -1,6 +1,9 @@
 package config;
 
 
+import org.activiti.engine.delegate.event.ActivitiEventType;
+import org.activiti.engine.delegate.event.impl.ActivitiEntityEventImpl;
+import org.activiti.engine.delegate.event.impl.ActivitiEventImpl;
 import org.activiti.engine.event.EventLogEntry;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
@@ -34,6 +37,8 @@ public class ConfigEventListenerTest {
         Task task = activitiRule.getTaskService().createTaskQuery().singleResult();
         activitiRule.getTaskService().complete(task.getId());
 
+        // 手动发起自定义事件
+        activitiRule.getRuntimeService().dispatchEvent(new ActivitiEventImpl(ActivitiEventType.CUSTOM));
     }
 
 }
