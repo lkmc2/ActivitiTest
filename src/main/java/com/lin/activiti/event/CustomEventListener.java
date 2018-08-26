@@ -21,7 +21,7 @@ public class CustomEventListener implements ActivitiEventListener {
     public void onEvent(ActivitiEvent activitiEvent) {
         ActivitiEventType eventType = activitiEvent.getType();
 
-        if (ActivitiEventType.PROCESS_STARTED.equals(eventType)) {
+        if (ActivitiEventType.CUSTOM.equals(eventType)) {
             // 自定义事件的getProcessInstanceId为null
             LOGGER.info("监听到自定义事件 {} \t {}", eventType, activitiEvent.getProcessInstanceId());
         }
