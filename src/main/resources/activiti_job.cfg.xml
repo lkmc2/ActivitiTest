@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <!--基于内存模型的流程引擎-->
+  <bean id="processEngineConfiguration"
+    class="org.activiti.engine.impl.cfg.StandaloneInMemProcessEngineConfiguration">
+    <property name="commandInvoker" ref="commandInvoker"/>
+    <property name="enableDatabaseEventLogging" value="false"/> <!--开始数据库事件记录-->
+    <!--异步执行操作激活-->
+    <property name="asyncExecutorActivate" value="true"/>
+    <!--设置异步执行器-->
+    <property name="asyncExecutor" ref="asyncExecutor"/>
+    <!--配置事件监听器-->
+    <property name="eventListeners">
+      <list>
+        <!--定时任务事件监听器-->
+        <bean class="com.lin.activiti.event.JobEventListener"/>
+      </list>
+    </property>
+  </bean>
+
+  <!--异步执行器-->
+  <bean id="asyncExecutor" class="org.activiti.engine.impl.asyncexecutor.DefaultAsyncJobExecutor">
+    <!--执行服务线程池-->
+    <property name="executorService" ref="executorService" />
+  </bean>
+
+  <!--执行服务线程池-->
+  <bean id="executorService" class="org.springframework.scheduling.concurrent.ThreadPoolExecutorFactoryBean">
+    <!--设置线程池中线程的前缀-->
+    <property name="threadNamePrefix" value="activiti-job-"/>
+    <!--核心线程数-->
+    <property name="corePoolSize" value="5"/>
+    <!--最大线程数-->
+    <property name="maxPoolSize" value="20"/>
+    <!--阻塞队列长度-->
+    <property name="queueCapacity" value="100"/>
+    <!--当核心线程、最大线程、阻塞队列都满了的时候的处理策略-->
+    <property name="rejectedExecutionHandler">
+      <!--拒绝线程加入策略-->
+      <bean class="java.util.concurrent.ThreadPoolExecutor$AbortPolicy"/>
+    </property>
+  </bean>
+
+  <bean id="commandInvoker" class="com.lin.activiti.interceptor.MDCCommandInvoker"/>
+
+</beans>

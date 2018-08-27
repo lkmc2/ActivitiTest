@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f271d520-ba35-49bc-bfc0-f51dbab52cf7" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lin/activiti/event/JobEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/activiti_job.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/my-process_job.bpmn20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/config/ConfigJobTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/activiti_interceptor.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/activiti_interceptor.cfg.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,41 +33,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConfigEventListenerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigEventListenerTest.java">
+      <file leaf-file-name="ConfigJobTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigJobTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
+            <state relative-caret-position="349">
+              <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfigInterceptorTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigInterceptorTest.java">
+      <file leaf-file-name="JobEventListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/activiti/event/JobEventListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="21">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activiti_interceptor.cfg.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/activiti_interceptor.cfg.xml">
+      <file leaf-file-name="my-process_job.bpmn20.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/my-process_job.bpmn20.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            <state relative-caret-position="228">
+              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.jboss.jbpm.chart.editor.BpmnDesignerFileEditorProvider" />
+        </entry>
+      </file>
+      <file leaf-file-name="Semantic.xsd" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/jBPM/lib/jbpm-support.jar!/schemas/jbmn20/Semantic.xsd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="1515" column="4" selection-start-line="1515" selection-start-column="4" selection-end-line="1515" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DurationCommandInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/activiti/interceptor/DurationCommandInterceptor.java">
+      <file leaf-file-name="activiti_job.cfg.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/activiti_job.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="380">
+              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThreadPoolExecutorFactoryBean.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.5.RELEASE/spring-context-5.0.5.RELEASE.jar!/org/springframework/scheduling/concurrent/ThreadPoolExecutorFactoryBean.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -120,6 +139,10 @@
         <option value="$PROJECT_DIR$/src/test/java/config/ConfigInterceptorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/activiti/interceptor/DurationCommandInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/resources/activiti_interceptor.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lin/activiti/event/JobEventListener.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/activiti_job.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/config/ConfigJobTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/my-process_job.bpmn20.xml" />
       </list>
     </option>
   </component>
@@ -238,6 +261,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="ActivitiETy&#9;FILE&#9;jar://C:/Users/lkmc2/.m2/repository/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/delegate/event/ActivitiEventType.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
@@ -247,8 +271,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="config" />
       <recent name="com.lin.activiti.event" />
+      <recent name="config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\IntellJ Project\ActivitiTest\src\main\resources" />
@@ -266,7 +290,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ConfigInterceptorTest.test">
+  <component name="RunManager" selected="JUnit.ConfigJobTest.test">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -362,7 +386,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ConfigMDCTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConfigJobTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ActivitiTest" />
       <extension name="coverage">
         <pattern>
@@ -373,7 +397,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="config" />
-      <option name="MAIN_CLASS_NAME" value="config.ConfigMDCTest" />
+      <option name="MAIN_CLASS_NAME" value="config.ConfigJobTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -425,19 +449,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 9" />
-      <item itemvalue="JUnit.ConfigMDCTest.test" />
       <item itemvalue="JUnit.ConfigHistoryLevelTest.test" />
       <item itemvalue="JUnit.ConfigEventLogTest.test" />
       <item itemvalue="JUnit.ConfigEventListenerTest.test" />
       <item itemvalue="JUnit.ConfigInterceptorTest.test" />
+      <item itemvalue="JUnit.ConfigJobTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConfigJobTest.test" />
         <item itemvalue="JUnit.ConfigInterceptorTest.test" />
         <item itemvalue="JUnit.ConfigEventListenerTest.test" />
         <item itemvalue="JUnit.ConfigEventLogTest.test" />
         <item itemvalue="JUnit.ConfigHistoryLevelTest.test" />
-        <item itemvalue="JUnit.ConfigMDCTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -457,7 +481,7 @@
       <workItem from="1535086729419" duration="5003000" />
       <workItem from="1535169731390" duration="8027000" />
       <workItem from="1535253455077" duration="6425000" />
-      <workItem from="1535339987451" duration="1866000" />
+      <workItem from="1535339987451" duration="7815000" />
     </task>
     <task id="LOCAL-00001" summary="添加所需的jar包资源，并创建流程引擎">
       <created>1534949393362</created>
@@ -655,43 +679,50 @@
       <option name="project" value="LOCAL" />
       <updated>1535341649239</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="以树形形式展示执行过程的日志">
+      <created>1535342018307</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1535342018307</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConfigEventListenerTest_test - 2018.08.26 at 12h 49m 50s.xml">
-      <configuration name="ConfigEventListenerTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConfigEventListenerTest_test - 2018.08.26 at 12h 50m 26s.xml">
-      <configuration name="ConfigEventListenerTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConfigEventListenerTest_test - 2018.08.26 at 12h 50m 47s.xml">
-      <configuration name="ConfigEventListenerTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConfigEventListenerTest_test - 2018.08.26 at 12h 51m 18s.xml">
-      <configuration name="ConfigEventListenerTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConfigEventListenerTest_test - 2018.08.26 at 12h 53m 21s.xml">
-      <configuration name="ConfigEventListenerTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConfigInterceptorTest_test - 2018.08.27 at 11h 37m 42s.xml">
-      <configuration name="ConfigInterceptorTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConfigInterceptorTest_test - 2018.08.27 at 11h 41m 05s.xml">
-      <configuration name="ConfigInterceptorTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConfigInterceptorTest_test - 2018.08.27 at 11h 49m 23s.xml">
-      <configuration name="ConfigInterceptorTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConfigInterceptorTest_test - 2018.08.27 at 11h 49m 47s.xml">
-      <configuration name="ConfigInterceptorTest.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ConfigInterceptorTest_test - 2018.08.27 at 11h 50m 40s.xml">
       <configuration name="ConfigInterceptorTest.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ConfigInterceptorTest_test - 2018.08.27 at 11h 51m 13s.xml">
+      <configuration name="ConfigInterceptorTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigJobTest_test - 2018.08.27 at 12h 58m 06s.xml">
+      <configuration name="ConfigJobTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigJobTest_test - 2018.08.27 at 13h 00m 03s.xml">
+      <configuration name="ConfigJobTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigJobTest_test - 2018.08.27 at 13h 02m 00s.xml">
+      <configuration name="ConfigJobTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigJobTest_test - 2018.08.27 at 13h 05m 58s.xml">
+      <configuration name="ConfigJobTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigJobTest_test - 2018.08.27 at 13h 15m 17s.xml">
+      <configuration name="ConfigJobTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigJobTest_test - 2018.08.27 at 13h 15m 40s.xml">
+      <configuration name="ConfigJobTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigJobTest_test - 2018.08.27 at 13h 16m 52s.xml">
+      <configuration name="ConfigJobTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigJobTest_test - 2018.08.27 at 13h 19m 14s.xml">
+      <configuration name="ConfigJobTest.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38465000" />
+    <option name="totallyTimeSpent" value="44414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="858" y="0" width="589" height="907" extended-state="0" />
@@ -716,8 +747,8 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32908162" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2929032" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32903227" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2916129" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.33419356" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.6994329" />
@@ -738,11 +769,36 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="部署流程定义文件，并将bpmn文件后缀名改成xml" />
     <MESSAGE value="完成一个流程的定义和启动" />
     <MESSAGE value="编写从控制台获取用户输入的逻辑" />
     <MESSAGE value="修复xml的中文乱码" />
@@ -767,7 +823,8 @@
     <MESSAGE value="修正监听自定义事件不起作用的问题" />
     <MESSAGE value="添加前置命令拦截器" />
     <MESSAGE value="添加后置命令拦截器" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加后置命令拦截器" />
+    <MESSAGE value="以树形形式展示执行过程的日志" />
+    <option name="LAST_COMMIT_MESSAGE" value="以树形形式展示执行过程的日志" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -775,87 +832,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/impl/cfg/SpringBeanFactoryProxyMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/impl/cfg/BeansConfigurationHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="25" column="56" lean-forward="true" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://SPRING/mappedClass=org.activiti.engine.ProcessEngineConfiguration">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>SPRING</ID>
-          <OriginalElement>mappedClass=org.activiti.engine.ProcessEngineConfiguration</OriginalElement>
-          <nodes>
-            <node x="" y="">module=ActivitiTest;fileset=fileset;context=F:/IntellJ Project/ActivitiTest/src/main/resources/activiti.cfg.xml;bean_class=org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration;bean_name=processEngineConfiguration</node>
-            <node x="" y="">&lt;unknown&gt;</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="133.0" y="114.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Local context</Category>
-            <Category>Properties</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/org.activiti.engine.ProcessEngineConfiguration">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>org.activiti.engine.ProcessEngineConfiguration</OriginalElement>
-          <nodes>
-            <node x="" y="">org.activiti.engine.ProcessEngineConfiguration</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="106.0" y="16.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/impl/cfg/StandaloneInMemProcessEngineConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/ProcessEngineConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4256">
-          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/impl/cfg/StandaloneProcessEngineConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/activiti/DemoMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/activiti.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -993,13 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/delegate/event/ActivitiEventType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="63" column="50" lean-forward="true" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/impl/interceptor/CommandContext.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
@@ -1025,23 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigMDCTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="25" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1111,13 +1063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigEventListenerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/delegate/event/ActivitiEvent.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1156,19 +1101,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigInterceptorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/activiti_interceptor.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="342">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/activiti_interceptor.cfg.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigEventListenerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="570">
+          <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
         </state>
       </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.5.RELEASE/spring-context-5.0.5.RELEASE.jar!/org/springframework/scheduling/concurrent/ThreadPoolExecutorFactoryBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/concurrent/ThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="2063" column="73" lean-forward="true" selection-start-line="2063" selection-start-column="73" selection-end-line="2063" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/delegate/event/ActivitiEventType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/impl/asyncexecutor/DefaultAsyncJobExecutor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/activiti_job.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigInterceptorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="32" column="8" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="34" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/activiti/event/JobEventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigMDCTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/config/ConfigJobTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/jBPM/lib/jbpm-support.jar!/schemas/jbmn20/Semantic.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="1515" column="4" selection-start-line="1515" selection-start-column="4" selection-end-line="1515" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/my-process_job.bpmn20.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.jboss.jbpm.chart.editor.BpmnDesignerFileEditorProvider" />
     </entry>
   </component>
   <component name="masterDetails">
