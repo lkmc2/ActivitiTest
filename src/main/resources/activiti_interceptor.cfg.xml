@@ -9,7 +9,14 @@
     class="org.activiti.engine.impl.cfg.StandaloneInMemProcessEngineConfiguration">
     <property name="commandInvoker" ref="commandInvoker"/>
     <property name="enableDatabaseEventLogging" value="false"/>
+    <!--前置命令拦截器-->
     <property name="customPreCommandInterceptors">
+      <list>
+        <bean class="com.lin.activiti.interceptor.DurationCommandInterceptor"/>
+      </list>
+    </property>
+    <!--后置命令拦截器（和前置命令拦截器会有时间差）-->
+    <property name="customPostCommandInterceptors">
       <list>
         <bean class="com.lin.activiti.interceptor.DurationCommandInterceptor"/>
       </list>
