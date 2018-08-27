@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <beans xmlns="http://www.springframework.org/schema/beans"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.springframework.org/schema/beans   http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans   http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <!--基于内存模型的流程引擎-->
-  <bean id="processEngineConfiguration"
-    class="org.activiti.engine.impl.cfg.StandaloneInMemProcessEngineConfiguration">
-    <property name="commandInvoker" ref="commandInvoker"/>
-    <property name="enableDatabaseEventLogging" value="false"/>
-    <!--前置命令拦截器-->
-    <property name="customPreCommandInterceptors">
-      <list>
-        <bean class="com.lin.activiti.interceptor.DurationCommandInterceptor"/>
-      </list>
-    </property>
-    <!--后置命令拦截器（和前置命令拦截器会有时间差）-->
-    <property name="customPostCommandInterceptors">
-      <list>
-        <bean class="com.lin.activiti.interceptor.DurationCommandInterceptor"/>
-      </list>
-    </property>
-  </bean>
+    <!--基于内存模型的流程引擎-->
+    <bean id="processEngineConfiguration"
+          class="org.activiti.engine.impl.cfg.StandaloneInMemProcessEngineConfiguration">
+        <!--<property name="commandInvoker" ref="commandInvoker"/>-->
+        <property name="enableDatabaseEventLogging" value="false"/>
+        <!--是否以树形形式展示执行过程的日志-->
+        <property name="enableVerboseExecutionTreeLogging" value="true"/>
+        <!--前置命令拦截器-->
+        <property name="customPreCommandInterceptors">
+            <list>
+                <bean class="com.lin.activiti.interceptor.DurationCommandInterceptor"/>
+            </list>
+        </property>
+        <!--后置命令拦截器（和前置命令拦截器会有时间差）-->
+        <property name="customPostCommandInterceptors">
+            <list>
+                <bean class="com.lin.activiti.interceptor.DurationCommandInterceptor"/>
+            </list>
+        </property>
+    </bean>
 
-  <bean id="commandInvoker" class="com.lin.activiti.interceptor.MDCCommandInvoker"/>
+    <bean id="commandInvoker" class="com.lin.activiti.interceptor.MDCCommandInvoker"/>
 
 </beans>
